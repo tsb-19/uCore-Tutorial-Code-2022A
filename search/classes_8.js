@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['semaphore_1091',['semaphore',['../structsemaphore.html',1,'']]],
-  ['superblock_1092',['superblock',['../structsuperblock.html',1,'']]],
-  ['syscall_5fcontext_1093',['syscall_context',['../structsyscall__context.html',1,'']]]
+  ['semaphore_1151',['semaphore',['../structsemaphore.html',1,'']]],
+  ['superblock_1152',['superblock',['../structsuperblock.html',1,'']]],
+  ['syscall_5fcontext_1153',['syscall_context',['../structsyscall__context.html',1,'']]]
 ];

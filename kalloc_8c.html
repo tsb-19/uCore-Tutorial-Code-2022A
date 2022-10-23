@@ -89,30 +89,17 @@ $(document).ready(function(){initNavTree('kalloc_8c.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="kalloc_8h_source.html">kalloc.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="defs_8h_source.html">../utils/defs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="vm__dependency_8h_source.html">vm_dependency.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 kalloc.c 的引用(Include)关系图:</div>
 <div class="dyncontent">
 <div class="center"><img src="kalloc_8c__incl.png" border="0" usemap="#kernel-vm_2kalloc_8c" alt=""/></div>
 <map name="kernel-vm_2kalloc_8c" id="kernel-vm_2kalloc_8c">
-<area shape="rect" title=" " alt="" coords="239,5,379,32"/>
-<area shape="rect" href="kalloc_8h.html" title=" " alt="" coords="5,155,77,181"/>
-<area shape="rect" href="defs_8h.html" title=" " alt="" coords="523,80,629,107"/>
-<area shape="rect" href="const_8h.html" title=" " alt="" coords="1403,155,1472,181"/>
-<area shape="rect" href="log_8h.html" title=" " alt="" coords="410,229,465,256"/>
-<area shape="rect" href="printf_8h.html" title=" " alt="" coords="153,155,221,181"/>
-<area shape="rect" href="riscv_8h.html" title=" " alt="" coords="777,229,841,256"/>
-<area shape="rect" href="utils_2types_8h.html" title=" " alt="" coords="613,304,683,331"/>
-<area shape="rect" href="sbi_8h.html" title=" " alt="" coords="117,229,171,256"/>
-<area shape="rect" href="string_8h.html" title=" " alt="" coords="223,229,294,256"/>
-<area shape="rect" href="timer_8h.html" title=" " alt="" coords="318,229,386,256"/>
-<area shape="rect" href="console_8h.html" title=" " alt="" coords="614,155,698,181"/>
-<area shape="rect" href="syscall_8h.html" title=" " alt="" coords="398,155,538,181"/>
-<area shape="rect" href="trap_8h.html" title=" " alt="" coords="541,229,643,256"/>
-<area shape="rect" href="map_8h.html" title=" " alt="" coords="723,155,867,181"/>
-<area shape="rect" href="vm_8h.html" title=" " alt="" coords="941,155,1077,181"/>
-<area shape="rect" href="queue_8h.html" title=" " alt="" coords="1152,155,1328,181"/>
-<area shape="rect" href="processor_8h.html" title=" " alt="" coords="958,229,1157,256"/>
+<area shape="rect" title=" " alt="" coords="11,5,151,32"/>
+<area shape="rect" href="kalloc_8h.html" title=" " alt="" coords="9,80,81,107"/>
+<area shape="rect" href="vm__dependency_8h.html" title=" " alt="" coords="25,229,164,256"/>
+<area shape="rect" href="kernel-vm_2defs_8h.html" title=" " alt="" coords="10,304,73,331"/>
+<area shape="rect" href="kernel-vm_2log_8h.html" title=" " alt="" coords="26,155,81,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -129,13 +116,11 @@ kalloc.c 的引用(Include)关系图:</div>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 变量</h2></td></tr>
-<tr class="memitem:a5f3ffcf1add5763eac42b04367f98242"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kalloc_8c.html#a5f3ffcf1add5763eac42b04367f98242">ekernel</a> []</td></tr>
-<tr class="separator:a5f3ffcf1add5763eac42b04367f98242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af019c503ad42e7d39d4e64663d786e85"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a53f94e8f64a65009a9791b5ddf3cd8da"><td class="memItemLeft" >struct {</td></tr>
 <tr class="memitem:a15c085c4851579a67faf467804f60866"><td class="memItemLeft" >&#160;&#160;&#160;struct linklist *&#160;&#160;&#160;<a class="el" href="kalloc_8c.html#a15c085c4851579a67faf467804f60866">freelist</a></td></tr>
 <tr class="separator:a15c085c4851579a67faf467804f60866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af019c503ad42e7d39d4e64663d786e85"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kalloc_8c.html#af019c503ad42e7d39d4e64663d786e85">kmem</a></td></tr>
-<tr class="separator:af019c503ad42e7d39d4e64663d786e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53f94e8f64a65009a9791b5ddf3cd8da"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="kalloc_8c.html#a53f94e8f64a65009a9791b5ddf3cd8da">kmem</a></td></tr>
+<tr class="separator:a53f94e8f64a65009a9791b5ddf3cd8da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">函数说明</h2>
 <a id="a1fb1c2e3b2e5deafacdfdd46107836d3"></a>
@@ -221,20 +206,6 @@ kalloc.c 的引用(Include)关系图:</div>
 </div>
 </div>
 <h2 class="groupheader">变量说明</h2>
-<a id="a5f3ffcf1add5763eac42b04367f98242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f3ffcf1add5763eac42b04367f98242">&#9670;&nbsp;</a></span>ekernel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char ekernel[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a15c085c4851579a67faf467804f60866"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15c085c4851579a67faf467804f60866">&#9670;&nbsp;</a></span>freelist</h2>
 
@@ -249,8 +220,8 @@ kalloc.c 的引用(Include)关系图:</div>
 
 </div>
 </div>
-<a id="af019c503ad42e7d39d4e64663d786e85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af019c503ad42e7d39d4e64663d786e85">&#9670;&nbsp;</a></span>kmem</h2>
+<a id="a53f94e8f64a65009a9791b5ddf3cd8da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53f94e8f64a65009a9791b5ddf3cd8da">&#9670;&nbsp;</a></span>kmem</h2>
 
 <div class="memitem">
 <div class="memproto">

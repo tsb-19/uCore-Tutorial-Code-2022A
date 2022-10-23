@@ -2,6 +2,9 @@ var trap_8h =
 [
     [ "trapframe", "structtrapframe.html", "structtrapframe" ],
     [ "trap_handler_context", "structtrap__handler__context.html", "structtrap__handler__context" ],
+    [ "SSTATUS_SPIE", "trap_8h.html#a3f9373ba6db2ce5e5c7ea28c2a5b3df9", null ],
+    [ "SSTATUS_SPP", "trap_8h.html#a4d0820d6a8b0c5b0fef6875a985d3370", null ],
+    [ "pagetable_t", "trap_8h.html#aabc0f4f29a1508768d880855992b8ba7", null ],
     [ "Exception", "trap_8h.html#a8852f03cd91327c7c725673317d85b46", [
       [ "InstructionMisaligned", "trap_8h.html#a8852f03cd91327c7c725673317d85b46a580292303303c1b837210c1428279748", null ],
       [ "InstructionAccessFault", "trap_8h.html#a8852f03cd91327c7c725673317d85b46aed417e6c7b91feb214eb5a231bdf3257", null ],
@@ -26,7 +29,6 @@ var trap_8h =
       [ "UserExternal", "trap_8h.html#a137af7bce5ff764f5c0aa4550086deaaafb1ffb20766193b289339bf4aab6b802", null ],
       [ "SupervisorExternal", "trap_8h.html#a137af7bce5ff764f5c0aa4550086deaaa4583de1d5b73acd12c43416df6a6349b", null ]
     ] ],
-    [ "kerneltrap", "trap_8h.html#aee583f80cd74fdae19ca29d44705b560", null ],
     [ "set_trap", "trap_8h.html#abc6b4a1e99d8bf04a249c5cd8cc6107f", null ],
     [ "usertrapret", "trap_8h.html#af7af9d3b41281fc03534de3900476b85", null ]
 ];
