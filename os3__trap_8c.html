@@ -115,7 +115,7 @@ os3_trap.c 的引用(Include)关系图:</div>
 <area shape="rect" href="syscall__ids_8h.html" title=" " alt="" coords="392,319,497,345"/>
 <area shape="rect" href="syscall_8h.html" title="syscall模块主要负责系统调用的处理，根据传入的syscall id调用对应的syscall函数" alt="" coords="521,319,600,345"/>
 <area shape="rect" href="syscall_2defs_8h.html" title="规定了uCore项目的所有语义规范，如需开发其它模块，也要遵守该约定，包含类型定义、宏定义和riscv汇编函数" alt="" coords="529,393,592,420"/>
-<area shape="rect" href="trap_8h.html" title=" " alt="" coords="624,319,684,345"/>
+<area shape="rect" href="trap_8h.html" title="负责发生异常时操作系统的处理" alt="" coords="624,319,684,345"/>
 <area shape="rect" href="plic_8h.html" title=" " alt="" coords="708,319,765,345"/>
 <area shape="rect" href="timer_8h.html" title=" " alt="" coords="769,468,837,495"/>
 <area shape="rect" href="trap_2log_8h.html" title=" " alt="" coords="621,393,676,420"/>
@@ -147,8 +147,8 @@ os3_trap.c 的引用(Include)关系图:</div>
 <tr class="separator:ad1dd8c5950911d65a79653500e47f35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa855394a73ad59ad4b4d454c3520787"><td class="memItemLeft" align="right" valign="top"><a class="el" href="console_2defs_8h.html#a5975ce0896ee5ec5db2f1a411620a51a">uint64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os3__trap_8c.html#aaa855394a73ad59ad4b4d454c3520787">os3_get_userret</a> ()</td></tr>
 <tr class="separator:aaa855394a73ad59ad4b4d454c3520787"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f67d645b4ace02354af53d5f7006080"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os3__trap_8c.html#a4f67d645b4ace02354af53d5f7006080">os3_finish_usertrap</a> (int cause)</td></tr>
-<tr class="separator:a4f67d645b4ace02354af53d5f7006080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6e7cbeb83d7f7ca9336904336f3b326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os3__trap_8c.html#ad6e7cbeb83d7f7ca9336904336f3b326">os3_customized_usertrap</a> (int cause)</td></tr>
+<tr class="separator:ad6e7cbeb83d7f7ca9336904336f3b326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02641f6f92cc26c6da58e722f561ec2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os3__trap_8c.html#a02641f6f92cc26c6da58e722f561ec2b">os3_error_in_trap</a> (int <a class="el" href="virtio__disk_8c.html#a051c9e198ee930358372c407a17e8b78">status</a>)</td></tr>
 <tr class="separator:a02641f6f92cc26c6da58e722f561ec2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e88ec3bac50ef1f5dcc89b12528b712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os3__trap_8c.html#a0e88ec3bac50ef1f5dcc89b12528b712">os3_super_external_handler</a> ()</td></tr>
@@ -174,6 +174,24 @@ os3_trap.c 的引用(Include)关系图:</div>
 
 </div>
 </div>
+<a id="ad6e7cbeb83d7f7ca9336904336f3b326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e7cbeb83d7f7ca9336904336f3b326">&#9670;&nbsp;</a></span>os3_customized_usertrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void os3_customized_usertrap </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cause</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a02641f6f92cc26c6da58e722f561ec2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a02641f6f92cc26c6da58e722f561ec2b">&#9670;&nbsp;</a></span>os3_error_in_trap()</h2>
 
@@ -185,24 +203,6 @@ os3_trap.c 的引用(Include)关系图:</div>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4f67d645b4ace02354af53d5f7006080"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f67d645b4ace02354af53d5f7006080">&#9670;&nbsp;</a></span>os3_finish_usertrap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void os3_finish_usertrap </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cause</em></td><td>)</td>
           <td></td>
         </tr>
       </table>

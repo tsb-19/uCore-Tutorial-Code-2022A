@@ -123,7 +123,7 @@ os5_trap.c 的引用(Include)关系图:</div>
 <area shape="rect" href="syscall__ids_8h.html" title=" " alt="" coords="393,393,498,420"/>
 <area shape="rect" href="syscall_8h.html" title="syscall模块主要负责系统调用的处理，根据传入的syscall id调用对应的syscall函数" alt="" coords="290,393,369,420"/>
 <area shape="rect" href="syscall_2defs_8h.html" title="规定了uCore项目的所有语义规范，如需开发其它模块，也要遵守该约定，包含类型定义、宏定义和riscv汇编函数" alt="" coords="298,468,361,495"/>
-<area shape="rect" href="trap_8h.html" title=" " alt="" coords="522,393,582,420"/>
+<area shape="rect" href="trap_8h.html" title="负责发生异常时操作系统的处理" alt="" coords="522,393,582,420"/>
 <area shape="rect" href="plic_8h.html" title=" " alt="" coords="658,393,715,420"/>
 <area shape="rect" href="timer_8h.html" title=" " alt="" coords="590,543,658,569"/>
 <area shape="rect" href="trap_2log_8h.html" title=" " alt="" coords="438,468,493,495"/>
@@ -155,8 +155,8 @@ os5_trap.c 的引用(Include)关系图:</div>
 <tr class="separator:a94ba2269c78018beff91651fc8fc6304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa088832032ad3dd788064091271a137a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="console_2defs_8h.html#a5975ce0896ee5ec5db2f1a411620a51a">uint64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os5__trap_8c.html#aa088832032ad3dd788064091271a137a">os5_get_userret</a> ()</td></tr>
 <tr class="separator:aa088832032ad3dd788064091271a137a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a258dc5a58133b4ee09ad5f432ba7da2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os5__trap_8c.html#a258dc5a58133b4ee09ad5f432ba7da2e">os5_finish_usertrap</a> (int cause)</td></tr>
-<tr class="separator:a258dc5a58133b4ee09ad5f432ba7da2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43cd60f964249eedc5359fa57e86bcdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os5__trap_8c.html#a43cd60f964249eedc5359fa57e86bcdd">os5_customized_usertrap</a> (int cause)</td></tr>
+<tr class="separator:a43cd60f964249eedc5359fa57e86bcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d209a3d2e5888bbb184314ca011c407"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os5__trap_8c.html#a5d209a3d2e5888bbb184314ca011c407">os5_error_in_trap</a> (int <a class="el" href="virtio__disk_8c.html#a051c9e198ee930358372c407a17e8b78">status</a>)</td></tr>
 <tr class="separator:a5d209a3d2e5888bbb184314ca011c407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12a7534f83eaa7b043cba4af2f80b43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os5__trap_8c.html#aa12a7534f83eaa7b043cba4af2f80b43">os5_super_external_handler</a> ()</td></tr>
@@ -182,6 +182,24 @@ os5_trap.c 的引用(Include)关系图:</div>
 
 </div>
 </div>
+<a id="a43cd60f964249eedc5359fa57e86bcdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43cd60f964249eedc5359fa57e86bcdd">&#9670;&nbsp;</a></span>os5_customized_usertrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void os5_customized_usertrap </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cause</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5d209a3d2e5888bbb184314ca011c407"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d209a3d2e5888bbb184314ca011c407">&#9670;&nbsp;</a></span>os5_error_in_trap()</h2>
 
@@ -193,24 +211,6 @@ os5_trap.c 的引用(Include)关系图:</div>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>status</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a258dc5a58133b4ee09ad5f432ba7da2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a258dc5a58133b4ee09ad5f432ba7da2e">&#9670;&nbsp;</a></span>os5_finish_usertrap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void os5_finish_usertrap </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cause</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
